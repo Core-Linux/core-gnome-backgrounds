@@ -1,27 +1,33 @@
-# Maintainer: Jonathan Sanfilippo  <jonalinux dot uk at gmail dot com>
-# Maintainer: m4teo.dev <EosOS Linux>
-# PKGBUILD EosOS core-gnome-backgrounds
+# Maintainer: m4teo.dev <Core Linux>
 
 pkgname=core-gnome-backgrounds
 pkgver=2.2
-pkgrel=1
-pkgdesc="official Gnome backgrounds EosOS Linux"
+pkgrel=3
+pkgdesc="Official Gnome backgrounds for Core Linux"
 arch=('any')
-url=""
+url="https://github.com/Core-Linux/core-gnome-backgrounds"
 
-# dipendenze necessarie
+makedepends=('git')
 depends=('gtk-update-icon-cache')
 
-# comandi di installazione
+source=("git+${url}.git")
+sha256sums=('SKIP')
+
 package() {
-    # crea la directory di destinazione
-    mkdir -p "${pkgdir}/usr/share/backgrounds/core"
-    # copia i file nella directory di destinazione
-    cp -r core "${pkgdir}/usr/share/backgrounds/"
-    
-    # crea la directory di destinazione
-     mkdir -p "${pkgdir}/usr/share/gnome-background-properties"
-    # copia la cartella nella directory di destinazione
-     cp -r gnome-background-properties "${pkgdir}/usr/share/"
-   
+    # 1. Entramos a la carpeta que clonó Git
+    cd "${srcdir}/${pkgname}"
+
+    # 2. Según tu tree, los archivos están en la subcarpeta 'src' del repo
+    # Estructura: core-gnome-backgrounds/src/core/
+    local _repo_src="src"
+
+    # 3. Instalar los Fondos
+    install -d "${pkgdir}/usr/share/backgrounds/core"
+    # Copiamos el contenido de la carpeta 'core' que está dentro de 'src'
+    cp -r "${_repo_src}/core/"* "${pkgdir}/usr/share/backgrounds/core/"
+
+    # 4. Instalar las Propiedades XML
+    install -d "${pkgdir}/usr/share/gnome-background-properties"
+    # Copiamos el contenido de gnome-background-properties que está dentro de 'src'
+    cp -r "${_repo_src}/gnome-background-properties/"* "${pkgdir}/usr/share/gnome-background-properties/"
 }
