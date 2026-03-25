@@ -1,14 +1,14 @@
 # Maintainer: m4teo.dev <Core Linux>
 
 pkgname=core-gnome-backgrounds
-pkgver=2.2
-pkgrel=3
+pkgver=2.3
+pkgrel=1
 pkgdesc="Official GNOME wallpapers for Core Linux"
 arch=('any')
 url="https://github.com/Core-Linux/core-gnome-backgrounds"
 license=('CC0')
 makedepends=('git')
-depends=()
+depends=('gtk-update-icon-cache')
 
 source=("git+${url}.git")
 sha256sums=('SKIP')
