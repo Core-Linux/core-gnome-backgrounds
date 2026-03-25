@@ -14,20 +14,20 @@ source=("git+${url}.git")
 sha256sums=('SKIP')
 
 package() {
-    # 1. Entramos a la carpeta que clonó Git
-    cd "${srcdir}/${pkgname}"
+  # 1. Entramos a la carpeta que makepkg creó para el clon de git
+  # $srcdir es donde makepkg descomprime todo.
+  # ${pkgname} es 'core-gnome-backgrounds'.
+  cd "${srcdir}/${pkgname}"
 
-    # 2. Según tu tree, los archivos están en la subcarpeta 'src' del repo
-    # Estructura: core-gnome-backgrounds/src/core/
-    local _repo_src="src"
+  # 2. Instalamos los fondos
+  # Usamos -d para crear toda la ruta de una vez
+  install -d "${pkgdir}/usr/share/backgrounds/core"
 
-    # 3. Instalar los Fondos
-    install -d "${pkgdir}/usr/share/backgrounds/core"
-    # Copiamos el contenido de la carpeta 'core' que está dentro de 'src'
-    cp -r "${_repo_src}/core/"* "${pkgdir}/usr/share/backgrounds/core/"
+  # Copiamos el contenido de la carpeta src/core que está DENTRO del repo
+  # Usamos ./src/core/ para asegurarnos de que sea relativo a la carpeta del repo
+  cp -r ./src/core/* "${pkgdir}/usr/share/backgrounds/core/"
 
-    # 4. Instalar las Propiedades XML
-    install -d "${pkgdir}/usr/share/gnome-background-properties"
-    # Copiamos el contenido de gnome-background-properties que está dentro de 'src'
-    cp -r "${_repo_src}/gnome-background-properties/"* "${pkgdir}/usr/share/gnome-background-properties/"
+  # 3. Instalamos las propiedades XML
+  install -d "${pkgdir}/usr/share/gnome-background-properties"
+  cp -r ./src/gnome-background-properties/* "${pkgdir}/usr/share/gnome-background-properties/"
 }
