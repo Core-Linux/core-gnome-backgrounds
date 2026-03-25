@@ -13,14 +13,17 @@ depends=('gtk-update-icon-cache')
 source=("git+${url}.git")
 sha256sums=('SKIP')
 
+source=("git+${url}.git")
+sha256sums=('SKIP')
+
 package() {
   cd "${srcdir}/${pkgname}"
 
   # Instalar fondos
   install -dm755 "${pkgdir}/usr/share/backgrounds/core"
-  cp -rv backgrounds/* "${pkgdir}/usr/share/backgrounds/core/"
+  cp -rv src/core/* "${pkgdir}/usr/share/backgrounds/core/"
 
   # Instalar propiedades XML
   install -dm755 "${pkgdir}/usr/share/gnome-background-properties"
-  cp -rv gnome-background-properties/* "${pkgdir}/usr/share/gnome-background-properties/"
+  cp -rv src/gnome-background-properties/* "${pkgdir}/usr/share/gnome-background-properties/"
 }
