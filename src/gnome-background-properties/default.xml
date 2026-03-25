@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Default Background</name>
+    <filename>/usr/share/backgrounds/core/himalaya-day.png</filename>
+    <filename-dark>/usr/share/backgrounds/core/himalaya-night.png</filename-dark>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+ <wallpaper deleted="false">
+    <name>Default Background core</name>
+    <filename>/usr/share/backgrounds/core/core.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Dynamic</name>
+    <filename>/usr/share/backgrounds/core/core-l.png</filename>
+    <filename-dark>/usr/share/backgrounds/core/core-d.png</filename-dark>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>mb</name>
+    <filename>/usr/share/backgrounds/core/mb.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+<wallpaper deleted="false">
+    <name>blossom-floral-bouquet</name>
+    <filename>/usr/share/backgrounds/core/blossom-floral-bouquet.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+</wallpaper>    
+<wallpaper deleted="false">
+    <name>leaf-nature</name>
+    <filename>/usr/share/backgrounds/core/leaf-nature.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+</wallpaper>     
+
+<wallpaper deleted="false">
+    <name>beach</name>
+    <filename>/usr/share/backgrounds/core/beach.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+</wallpaper>    
+
+<wallpaper deleted="false">
+    <name>canada</name>
+    <filename>/usr/share/backgrounds/core/canada.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+</wallpaper>    
+
+<wallpaper deleted="false">
+    <name>saturn</name>
+    <filename>/usr/share/backgrounds/core/saturn.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+</wallpaper>    
+
+<wallpaper deleted="false">
+    <name>macaw</name>
+    <filename>/usr/share/backgrounds/core/macaw.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+</wallpaper>    
+
+<wallpaper deleted="false">
+    <name>piano</name>
+    <filename>/usr/share/backgrounds/core/piano.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+</wallpaper> 
+
+<wallpaper deleted="false">
+    <name>vincent</name>
+    <filename>/usr/share/backgrounds/core/vincent.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+</wallpaper> 
+
+<wallpaper deleted="false">
+    <name>nord</name>
+    <filename>/usr/share/backgrounds/core/nord.jpg</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+</wallpaper> 
+
+  <wallpaper deleted="false">
+    <name>Dynamic2</name>
+    <filename>/usr/share/backgrounds/core/nord-l.jpg</filename>
+    <filename-dark>/usr/share/backgrounds/core/nord-d.jpg</filename-dark>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+
+</wallpapers>
