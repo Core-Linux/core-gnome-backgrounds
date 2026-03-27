@@ -3,9 +3,6 @@ color-scheme='prefer-dark'
 gtk-theme='Adwaita-dark'
 icon-theme='Papirus-Dark'
 
-[org.gnome.shell]
-distributor-logo='corelinux'
-
 [org.gnome.desktop.background]
 picture-uri='file:///usr/share/backgrounds/core/core.jpg'
 picture-uri-dark='file:///usr/share/backgrounds/core/core.jpg'
